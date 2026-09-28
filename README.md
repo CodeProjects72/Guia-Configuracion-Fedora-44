@@ -1,4 +1,4 @@
-# Fedora Post-Install
+# Fedora 44 Post-Install
 
 Guía de configuración y puesta a punto de Fedora después de una instalación limpia.
 
