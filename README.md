@@ -4,7 +4,7 @@ Guía de configuración y puesta a punto de Fedora después de una instalación 
 
 ---
 
-## 01 · Optimización de DNF
+## Optimización de DNF
 
 ### Configuración inicial
 
@@ -24,7 +24,7 @@ deltarpm=true
 
 ---
 
-## 02 · Actualización del sistema
+## Actualización del sistema
 
 Actualizar el sistema antes de comenzar con la instalación de paquetes:
 
@@ -34,7 +34,7 @@ sudo dnf update && sudo dnf upgrade -y
 
 ---
 
-## 03 · Paquetes multimedia
+## Paquetes multimedia
 
 Instalar codecs, reproductores, herramientas de compresión y utilidades multimedia:
 
@@ -50,19 +50,15 @@ Instalar los plugins y codecs adicionales:
 sudo dnf install -y gstreamer1-plugins-{bad-*,good-*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 ```
 
----
-
-## 04 · Herramientas básicas
-
-Instalar las herramientas esenciales:
+### Utilidades
 
 ```bash
-sudo dnf install -y wget curl git
+sudo dnf install tilix cmatrix btop htop fastfetch vlc qbittorrent obs-studio ffmpeg kdenlive mousepad eog evince gparted gnome-tweaks -y
 ```
 
 ---
 
-## 05 · ZSH
+## ZSH
 
 ### Instalación
 
@@ -104,7 +100,7 @@ Cerrar y volver a abrir la terminal.
 
 ---
 
-## 06 · Powerlevel10k
+## Powerlevel10k
 
 ### Instalación
 
@@ -132,7 +128,7 @@ Al iniciar aparecerá el asistente de configuración de Powerlevel10k.
 
 ---
 
-## 07 · ZSH para Root
+## ZSH para Root
 
 Para utilizar ZSH con la cuenta `root`, repetir los mismos pasos de instalación de ZSH, Oh My Zsh y Powerlevel10k desde la cuenta de root.
 
@@ -140,7 +136,7 @@ La configuración de `root` es independiente de la configuración del usuario no
 
 ---
 
-## 08 · Temas e iconos
+## Temas e iconos
 
 ### Bibata Cursor
 
@@ -230,9 +226,4 @@ sudo reboot
 
 ---
 
-## Referencias
-
-- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-- [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
-- [Layan GTK Theme](https://github.com/vinceliuice/Layan-gtk-theme)
-- [VirtualBox](https://www.virtualbox.org/)
+Listo
